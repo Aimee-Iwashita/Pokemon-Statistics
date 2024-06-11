@@ -20,6 +20,10 @@ The SQL code used for the data exploration can be found <a href=""> here</a>. Th
   <li>This data contains total of 1072 pokémons from generation 1 to generation 8.</li>
   <li>There are 18 types; Normal, Fire, Water, Grass, Flying, Fighting, Poison, Electric, Ground, Rock, Psychic, Ice, Bug, Ghost, Steel, Dragon, Dark, and Fairy.</li>
   <li>We have 118 legendary pokémons and 954 non-legendary pokémons.</li>
+  <li>Average stats of legendary pokémons vs non-legendary pokémons: <img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/ss1.png" alt="average stats of legendary and non-legendary pokémons"> <br>
+    Legendary Pokémon have higher averages across all stat attributes, suggesting that, on average, they are stronger than non-legendary Pokémon. In Section 2, we will further investigate the differences between legendary and non-legendary Pokémon.</li>
+  <li>Average stats by type:<br>
+    <img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/ss4.png" alt="average stats pokémons by type"><br></li>
 </ul>
 
 
@@ -32,3 +36,8 @@ You can find the SQL code files used for this analysis <a href="https://github.c
 ## 2. Difference between the legendary pokémon and non-legendary pokémons
 
 ## 3. Type combinations
+
+
+
+
+https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/ss1.png
