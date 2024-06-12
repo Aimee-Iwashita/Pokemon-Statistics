@@ -19,11 +19,17 @@ The SQL code used for the data exploration can be found <a href=""> here</a>. Th
 <ul>
   <li>This data contains total of 1072 pokémons from generation 1 to generation 8.</li>
   <li>There are 18 types; Normal, Fire, Water, Grass, Flying, Fighting, Poison, Electric, Ground, Rock, Psychic, Ice, Bug, Ghost, Steel, Dragon, Dark, and Fairy.</li>
+  <li>Overall type distribution:<br>
+    <img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image1.png" alt="Bar chart of pokémons count by type", style="width:650px;height:500px;"><br>
+    Water-type Pokémon are the most common, followed by Normal, Grass, Psychic, and Flying types. In contrast, Ice-type Pokémon are the least common, followed by Fairy and Ghost types.
+  </li>
   <li>We have 118 legendary pokémons and 954 non-legendary pokémons.</li>
   <li>Average stats of legendary pokémons vs non-legendary pokémons: <img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/ss1.png" alt="average stats of legendary and non-legendary pokémons"> <br>
     Legendary Pokémon have higher averages across all stat attributes, suggesting that, on average, they are stronger than non-legendary Pokémon. In Section 2, we will further investigate the differences between legendary and non-legendary Pokémon.</li>
   <li>Average stats by type:<br>
-    <img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/ss4.png" alt="average stats pokémons by type"><br></li>
+    <img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/ss4.png" alt="average stats pokémons by type", style="width:550px;height:450px;">
+    <img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image2.png" alt="total stats of pokémons by type", style="width:700px;height:500px;"><br>
+    On average, Dragon-type Pokémon tend to have higher overall statistics compared to other types, while Bug-type Pokémon generally have lower overall statistics in comparison. </li>
 </ul>
 
 
