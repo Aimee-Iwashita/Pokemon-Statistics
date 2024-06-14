@@ -213,9 +213,11 @@ You can find the SQL code files used for this analysis <a href="https://github.c
     <td>160</td>
   </tr>
 </table>
+<br>
+The majority of the Pokémon listed above are Legendary Pokémon or Mega Pokémon. This indicates that Legendary Pokémon and Mega Pokémon often possess higher stats compared to regular Pokémon.
 
 ## 2. Comparing Total Stats of Legendary and Non-Legendary Pokémon Using Bootstrapping
-In this section, we aim to compare the total stats (sum of all indivisual stats) between legendary and non-legendary Pokémon. 
+In this section, we aim to compare the total stats (sum of all indivisual stats) between legendary and non-legendary Pokémon. All programming in this section is done using R, and the codes are available HERE
 
 <img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image4.png" alt="Boxplot of total stats by legendary status">
 
@@ -227,12 +229,13 @@ This box plot reveals a noticeable difference in the total stats between legenda
 <img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image5.png" alt="Q-Q plot">
 <img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image6.png" alt="Shapiro-Wilk Normality test">
 - Equality of variance: The residual vs. fitted plot displays a random and consistent scatter around the horizontal line at 0 for both legendary and non-legendary groups. This observation indicates that the variability of residuals is similar across all levels of the fitted values, satisfying the equality of variance assumption. <br>
-<img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image7.png" alt="Residual vs. fitted plot">
+<img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image8.png" alt="Residual vs. fitted plot">
 - Random Sampling - This assumption is not applicable to this dataset since it comprises data for all Pokémon from generations 1 to 8.
 
 This dataset does not meet the requirements for ANOVA due to violations of the independence and normality assumptions. However, bootstrapping serves as a robust alternative to ANOVA because it does not rely on these assumptions. Bootstrapping is a resampling technique that generates multiple samples from the observed data, allowing for the estimation of parameters and confidence intervals without strict adherence to distributional assumptions or independence among observations.
 
 ### Bootstrapping Result
+<img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image7.png" alt="95% Confidence interval">
 With 95% confidence, the difference in total stats between legendary and non-legendary Pokémons falls within the range of 181.13 to 218.14 points. This means that, on average, legendary Pokémon have total stats that are 181.13 to 218.14 points higher than non-legendary Pokémon.<br>
 With 95% confidence, the median difference in total stats between legendary and non-legendary Pokémon falls within the range of 145 to 180 points. This means that, on average, the median total stats of legendary Pokémon are between 145 and 180 points higher than those of non-legendary Pokémon.
 
@@ -240,7 +243,8 @@ With 95% confidence, the median difference in total stats between legendary and 
 Since both confidence intervals do not contain 0, there is a statistically significant advantage in total stats for legendary Pokémon over non-legendary Pokémon, whether considering the average or the median values. Therefore, we conclude that legendary Pokémon generally have higher total stats compared to non-legendary Pokémon.
 
 ## 3. Type combinations
-
-
+In this section, we will investigate the type combinations of Pokémon. Pokémon can be associated with one or two types, which define their strengths and weaknesses. Pokémon with two types are called dual-type Pokémon. The first type is referred to as the primary type, and the second type is called the secondary type. For convenience in our investigation, we will denote the primary type as 'Type 1' and the secondary type as 'Type 2. All programming in this section is done using R, and the codes are available HERE
+<br>
+The heatmap reveals that the Normal/Flying type combination is the most common, followed by Grass/Poison and Bug/Flying types. Additionally, the map shows that having Flying type as the secondary type (Type 2) is quite common among Pokémon.
 
 
