@@ -14,7 +14,7 @@ This report explores and analyzes Pokémon statistics using SQL and R. The analy
 
 ## Data Exploration
 First, I conducted an initial data exploration using SQL and R to gain a comprehensive overview of the dataset. <br>
-The SQL code used for the data exploration can be found <a href=""> here</a>. The R codes can be found <a href=""> here</a>.
+The SQL code used for the data exploration can be found <a href="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/pokemon.2.sql"> here</a>. The R codes can be found <a href="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/pokemon_data_expo.R"> here</a>.
 <br><br>
 <ul>
   <li>This data contains total of 1072 pokémons from generation 1 to generation 8.</li>
@@ -37,7 +37,7 @@ The SQL code used for the data exploration can be found <a href=""> here</a>. Th
 
 ## 1. Identifying the top 3 Pokémons for each stats attributes
 This section addresses the first question: "Which Pokémon has the highest stats?" Using SQL, I identified the top Pokémon for each stat category. 
-You can find the SQL code files used for this analysis <a href="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/pokemon.2.sql"> here </a>. <br>
+You can find the SQL code files used for this analysis <a href="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/pokemon.3.sql"> here </a>. <br>
 <br>
 ### Total 
 <table>
@@ -217,7 +217,7 @@ You can find the SQL code files used for this analysis <a href="https://github.c
 The majority of the Pokémon listed above are Legendary Pokémon or Mega Pokémon. This indicates that Legendary Pokémon and Mega Pokémon often possess higher stats compared to regular Pokémon.
 
 ## 2. Comparing Total Stats of Legendary and Non-Legendary Pokémon Using Bootstrapping
-In this section, we aim to compare the total stats (sum of all indivisual stats) between legendary and non-legendary Pokémon. All programming in this section is done using R, and the codes are available HERE
+In this section, we aim to compare the total stats (sum of all indivisual stats) between legendary and non-legendary Pokémon. All programming in this section is done using R, and the codes are available <a href="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/pokemon.r"> here </a>.
 
 <img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image4.png" alt="Boxplot of total stats by legendary status">
 
@@ -243,7 +243,9 @@ With 95% confidence, the median difference in total stats between legendary and 
 Since both confidence intervals do not contain 0, there is a statistically significant advantage in total stats for legendary Pokémon over non-legendary Pokémon, whether considering the average or the median values. Therefore, we conclude that legendary Pokémon generally have higher total stats compared to non-legendary Pokémon.
 
 ## 3. Type combinations
-In this section, we will investigate the type combinations of Pokémon. Pokémon can be associated with one or two types, which define their strengths and weaknesses. Pokémon with two types are called dual-type Pokémon. The first type is referred to as the primary type, and the second type is called the secondary type. For convenience in our investigation, we will denote the primary type as 'Type 1' and the secondary type as 'Type 2. All programming in this section is done using R, and the codes are available HERE
+In this section, we will investigate the type combinations of Pokémon. Pokémon can be associated with one or two types, which define their strengths and weaknesses. Pokémon with two types are called dual-type Pokémon. The first type is referred to as the primary type, and the second type is called the secondary type. For convenience in our investigation, we will denote the primary type as 'Type 1' and the secondary type as 'Type 2. All programming in this section is done using R, and the codes are available <a href="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/pokemon.r"> here </a>.
+<br>
+<img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image9.png" alt="Heatmap">
 <br>
 The heatmap reveals that the Normal/Flying type combination is the most common, followed by Grass/Poison and Bug/Flying types. Additionally, the map shows that having Flying type as the secondary type (Type 2) is quite common among Pokémon.
 
