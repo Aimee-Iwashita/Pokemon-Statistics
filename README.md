@@ -217,12 +217,17 @@ You can find the SQL code files used for this analysis <a href="https://github.c
 ## 2. Comparing Total Stats of Legendary and Non-Legendary Pokémon Using Bootstrapping
 In this section, we aim to compare the total stats (sum of all indivisual stats) between legendary and non-legendary Pokémon. 
 
+<img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image4.png" alt="Boxplot of total stats by legendary status">
+
 This box plot reveals a noticeable difference in the total stats between legendary and non-legendary Pokémon. Non-legendary Pokémon exhibit a relatively symmetrical distribution, indicating that their total stats are evenly spread around the median. In contrast, legendary Pokémon show a left-skewed distribution, with most of their total stats clustered towards the higher end. Additionally, there is an outlier with an exceptionally high total stat, significantly above the upper quartile, highlighting the presence of an extremely powerful legendary Pokémon.
 
 ### ANOVA Assumption Checks
 - Independence: The data violates this assumption due to the evolutionary line of Pokémon, where the stats of a Pokémon are dependent on those of the previous evolution.
-- Normality: The Q-Q plot suggests the violation of the normality assumption, evident in the points deviating noticeably from the dotted line. This is further supported by the Shapiro-Wilk Normality test, with a very low p-value (<< 0.05), leading to the rejection of the null hypothesis of normality.
-- Equality of variance: The residual vs. fitted plot displays a random and consistent scatter around the horizontal line at 0 for both legendary and non-legendary groups. This observation indicates that the variability of residuals is similar across all levels of the fitted values, satisfying the equality of variance assumption.
+- Normality: The Q-Q plot suggests the violation of the normality assumption, evident in the points deviating noticeably from the dotted line. This is further supported by the Shapiro-Wilk Normality test, with a very low p-value (<< 0.05), leading to the rejection of the null hypothesis of normality. <br>
+<img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image5.png" alt="Q-Q plot">
+<img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image6.png" alt="Shapiro-Wilk Normality test">
+- Equality of variance: The residual vs. fitted plot displays a random and consistent scatter around the horizontal line at 0 for both legendary and non-legendary groups. This observation indicates that the variability of residuals is similar across all levels of the fitted values, satisfying the equality of variance assumption. <br>
+<img src="https://github.com/Aimee-Iwashita/Pokemon-Statistics/blob/main/images/pokemon_image7.png" alt="Residual vs. fitted plot">
 - Random Sampling - This assumption is not applicable to this dataset since it comprises data for all Pokémon from generations 1 to 8.
 
 This dataset does not meet the requirements for ANOVA due to violations of the independence and normality assumptions. However, bootstrapping serves as a robust alternative to ANOVA because it does not rely on these assumptions. Bootstrapping is a resampling technique that generates multiple samples from the observed data, allowing for the estimation of parameters and confidence intervals without strict adherence to distributional assumptions or independence among observations.
